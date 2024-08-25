@@ -1,0 +1,9 @@
+.fpHero {
+    height: 100vh;
+    width: 100%;
+
+    .container {
+        height: calc(100vh - 80px);
+        padding-top: 80px;
+    }
+}

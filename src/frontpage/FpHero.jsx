@@ -1,7 +1,13 @@
+import "../sass/frontpage/FpHero.scss";
+
 export default function FpHero() {
     return (
-        <>
-            FpHero
-        </>
+        <section className="fpHero">
+            <div className="container">
+                <div className="fpHero__content">
+                    fpHero
+                </div>
+            </div>
+        </section>
     )
 }
