@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.scss'
+import './sass/App.scss'
 import Frontpage from './frontpage/Frontpage'
 
 function App() {
