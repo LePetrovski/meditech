@@ -1,4 +1,4 @@
-import "../sass/frontpage/FpAbout.scss";
+import "../sass/frontpage/fpAbout.scss";
 
 export default function FpAbout() {
     return (

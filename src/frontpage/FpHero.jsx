@@ -1,4 +1,4 @@
-import "../sass/frontpage/FpHero.scss";
+import "../sass/frontpage/fpHero.scss";
 
 export default function FpHero() {
     return (
