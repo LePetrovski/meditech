@@ -12,13 +12,13 @@ export default function PerlinNoise() {
     const {uTime, uDisplacement, uStrength, uColorStart, uColorEnd} = useControls(
         'Shader', {
             uTime: {
-                value: 1.0,
+                value: 0.25,
                 min: 0,
                 max: 2,
                 step: 0.01
             },
             uDisplacement: {
-                value: 7.40,
+                value: 2.70,
                 min: 0,
                 max: 100,
                 step: 0.01
