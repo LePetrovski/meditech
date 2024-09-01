@@ -10,19 +10,19 @@ export default function DNA(props) {
     const {metalness, roughness, opacity} = useControls(
         'Material01', {
             metalness: {
-                value: 0.1,
+                value: 0.13,
                 min: 0,
                 max: 1,
                 step: 0.01
             },
             roughness: {
-                value: 0.1,
+                value: 0.17,
                 min: 0,
                 max: 1,
                 step: 0.01
             },
 			opacity: {
-				value: 0.5,
+				value: 0.8,
 				min: 0,
 				max: 1,
 				step: 0.01
@@ -33,7 +33,7 @@ export default function DNA(props) {
 	const {xr, yr, zr} = useControls(
         'Rotation', {
             xr: {
-				value: 0,
+				value: 0.55,
 				min: -Math.PI,
 				max: Math.PI,
 				step: 0.01
@@ -45,7 +45,7 @@ export default function DNA(props) {
 				step: 0.01
 			},
 			zr: {
-				value: 0,
+				value: -0.5,
 				min: -Math.PI,
 				max: Math.PI,
 				step: 0.01
@@ -57,19 +57,19 @@ export default function DNA(props) {
 	const {xp, yp, zp} = useControls(
         'Position', {
            xp: {
-				value: 0,
+				value: 0.37,
 				min: -10,
 				max: 10,
 				step: 0.01
 			},
 			yp: {
-				value: 0,
+				value: -0.9,
 				min: -10,
 				max: 10,
 				step: 0.01
 			},
 			zp: {
-				value: 0,
+				value: 2.74,
 				min: -10,
 				max: 10,
 				step: 0.01
@@ -97,15 +97,16 @@ export default function DNA(props) {
 
 		materials['Base_Material'].opacity = opacity;
 		materials['Fita_Material'].opacity = opacity;
+
         // dna.current.rotation.y += 0.005;
     });
 
     return (
         <group {...props} dispose={null} rotation={[xr, yr, zr]} position={[xp, yp, zp]} ref={dna}>
-        <group name="Sketchfab_Scene">
-			<group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
-			<group name="a466481064ec46f28c6587066bbebfa5fbx" rotation={[Math.PI / 2, 0, 0]}>
-				<group name="Object_2">
+        <group name="Sketchfab_Scene" >
+			<group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} >
+			<group name="a466481064ec46f28c6587066bbebfa5fbx" rotation={[Math.PI / 2, 0, 0]} >
+				<group name="Object_2" >
 				<group name="RootNode">
 					<group name="pSphere1">
 					<group name="transform1" />
