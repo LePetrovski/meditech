@@ -1,7 +1,32 @@
+$width_medium: calc(120px - 100vw);
+
 .header {
     position: fixed;
-    height: 80px;
-    width: 100%;
-    z-index: 2;
+    z-index: 99;
     inset: 0;
+    height: 120px;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .container {
+        height: 100%;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+    }
+
+    &__logo {
+        height: 100px;
+        width: 260px;
+        backdrop-filter: blur(10px);
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
 }

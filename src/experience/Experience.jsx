@@ -20,7 +20,7 @@ export default function Experience() {
             <ambientLight intensity={5} />
             <directionalLight position={[10, 10, 5]} intensity={1} />
 
-            <DNA scale={0.1} />
+            <DNA scale={0.01} />
             <PerlinNoise />
         </Canvas>
     )

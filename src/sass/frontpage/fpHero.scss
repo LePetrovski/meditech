@@ -3,7 +3,37 @@
     width: 100%;
 
     .container {
-        height: calc(100vh - 80px);
-        padding-top: 80px;
+        height: calc(100vh - 120px);
+        padding-top: 120px;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "text .";
+    }
+
+    &__content {
+        grid-area: text;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+        max-width: 650px;
+    }
+
+    &__title {
+        span{
+            animation: blink both 1s infinite;
+        }
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
     }
 }

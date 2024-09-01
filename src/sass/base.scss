@@ -1,0 +1,24 @@
+$main-font: "pragmatapro-fraktur", serif;
+
+h1 {
+    margin: 0;
+    font-family: $main-font;
+    font-weight: 700;
+}
+
+p {
+    font-family: $main-font;
+    font-weight: 400;
+    text-wrap-style: pretty;
+}
+
+a {
+    font-family: $main-font;
+    font-weight: 700;
+}
+
+.content {
+    max-width: 100% !important;
+    text-align: unset;
+    margin: 0 !important;
+}

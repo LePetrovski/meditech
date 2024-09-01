@@ -5,7 +5,11 @@ export default function Header() {
         <header className="header">
             <div className="container">
                 <div className="header__content">
-                    header
+                    <img className="header__logo" src="logo.png" alt="logo" />
+
+                    <nav className="header__nav">
+                    
+                    </nav>
                 </div>
             </div>
         </header>
