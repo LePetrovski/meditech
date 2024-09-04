@@ -2,8 +2,13 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useControls } from "leva";
 import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react"
+
+gsap.registerPlugin(useGSAP);
 
 export default function DNA(props) {
+	const {modelPosition} = props;
     const { nodes, materials, animations } = useGLTF('model/cell_shaded_double_helix.glb')
 	const group = useRef()
 	const { actions } = useAnimations(animations, group)
@@ -79,16 +84,9 @@ export default function DNA(props) {
     )
 
     useEffect(() => {
-        console.log('DNA loaded');
-        console.log(materials);
-
-		console.log(actions);
-
 		const action = actions['Take 001'];
 		action.setEffectiveTimeScale(0.1);
 		action.play();
-
-
     },[materials, actions])
 
     useFrame(() => {
@@ -101,8 +99,18 @@ export default function DNA(props) {
 		materials['Material_25'].opacity = opacity;
 		materials['Material_26'].opacity = opacity;
 
-        // group.current.rotation.y += 0.005;
+		if(modelPosition > 0) {
+			gsap.to(group.current.position, {x: 0, duration: 2.4, ease: 'power1.out'})
+			gsap.to(group.current.rotation, {y: Math.PI / 2, duration: 2.4, ease: 'power1.out'})
+		}
+
+		if(modelPosition == 0) {
+			gsap.to(group.current.position, {x: 0.74, duration: 2.4, ease: 'power1.out'})
+			gsap.to(group.current.rotation, {y: 0, duration: 2.4, ease: 'power1.out'})
+		}
     });
+
+	
 
 
 

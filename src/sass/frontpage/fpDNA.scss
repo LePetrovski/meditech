@@ -1,4 +1,26 @@
 .fpDNA {
     height: 100vh;
     width: 100%;
+
+    & .container {
+        padding-top: 120px;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 250px 1fr;
+
+        &__column {
+            background-color: black;
+
+            &.column {
+                &--2 {
+                    
+                }
+            }
+
+        }
+    }
 }

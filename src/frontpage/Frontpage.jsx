@@ -17,26 +17,18 @@ export default function Frontpage() {
     const [ modelPosition, setModelPosition ] = useState(0);
 
     useEffect(() => {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.fpDNA',
-                start: 'top top',
-                end: 'bottom top',
-                markers: true,
-                onUpdate: (self) => {
-                    const progress = self.progress;
-                    setModelPosition(progress);
-                }
+        ScrollTrigger.create({
+            trigger: '.fpDNA',
+            start: 'top bottom-=50',
+            end: 'top bottom-=50',
+            markers: true,
+            onUpdate: (self) => {
+                const progress = self.progress;
+                setModelPosition(progress);
             }
         });
-          
     }, []);
-
-    useEffect(() => {
-        console.log(modelPosition);
-    }, [modelPosition]);
     
-
     return (
     <TemplatePage>
         <div className="experience">
