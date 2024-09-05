@@ -6,7 +6,8 @@ h1, h2 {
     font-weight: 700;
 }
 
-p {
+p,
+span {
     font-family: $main-font;
     font-weight: 400;
     text-wrap-style: pretty;

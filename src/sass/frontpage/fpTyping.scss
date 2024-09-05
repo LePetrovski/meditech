@@ -1,0 +1,13 @@
+.fpTyping {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    &__content {
+        font-size: 3rem;
+
+        span {
+            font-weight: 900;
+            -webkit-text-stroke: 3px black;
+            color: white;
+        }
+    }
+}

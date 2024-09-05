@@ -1,6 +1,7 @@
 .fpDNA {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding-bottom: 160px;
 
     & .container {
         padding-top: 120px;
@@ -10,14 +11,41 @@
 
     &__content {
         display: grid;
-        grid-template-columns: 1fr 250px 1fr;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-areas: "column1 . column2";
 
         &__column {
             background-color: black;
+            border-radius: 14px;
+            padding: 40px 60px;
+            border: 2px solid white;
+
+            h2 {
+                font-size: 3rem;
+                padding-bottom: 20px;
+                position: relative;
+                text-transform: uppercase;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 70%;
+                    height: 2px;
+                    transform: translateX(-50%);
+                    background-color: white;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
 
             &.column {
                 &--2 {
-                    
+                    grid-area: column2;
+
                 }
             }
 

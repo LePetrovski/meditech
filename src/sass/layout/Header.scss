@@ -6,8 +6,7 @@ $width_medium: calc(120px - 100vw);
     inset: 0;
     height: 120px;
     width: 100%;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom: 1px solid white;
 
     .container {
         height: 100%;
@@ -19,7 +18,8 @@ $width_medium: calc(120px - 100vw);
         height: 100px;
         width: 260px;
         backdrop-filter: blur(10px);
-
+        padding-right: 30px;
+        border-right: 1px solid white;
     }
 
     &__content {
@@ -27,6 +27,13 @@ $width_medium: calc(120px - 100vw);
         justify-content: space-between;
         align-items: center;
         height: 100%;
+    }
+
+    &__nav {
+        height: 100px;
+        width: 100%;
+        padding-left: 30px;
+        backdrop-filter: blur(10px);
     }
 
 }

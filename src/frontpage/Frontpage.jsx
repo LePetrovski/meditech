@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TemplatePage from "../components/TemplatePage";
 import FpAbout from "./FpAbout";
+import FpTyping from "./FpTyping";
 import FpDNA from "./FpDNA";
 import FpHero from "./FpHero";
 import FpLead from "./FpLead";
@@ -37,6 +38,7 @@ export default function Frontpage() {
 
         <div className="frontPage">
             <FpHero />
+            <FpTyping />
             <FpDNA />
             <FpAbout />
             <FpProducts />
