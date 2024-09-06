@@ -1,10 +1,13 @@
 .fpTyping {
     backdrop-filter: blur(10px);
     width: 100%;
+    padding-bottom: 120px;
+
     &__content {
-        font-size: 3rem;
+        font-size: 3.4rem;
 
         span {
+            font-family: "pragmatapro-fraktur", serif;
             font-weight: 900;
             -webkit-text-stroke: 3px black;
             color: white;

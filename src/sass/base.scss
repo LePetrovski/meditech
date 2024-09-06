@@ -1,21 +1,37 @@
 $main-font: "pragmatapro-fraktur", serif;
+$text-font: "skolar-sans-latin", sans-serif;
 
-h1, h2 {
+html, body {
+overflow-x: hidden;
+}
+
+h1, h2, h3 {
     margin: 0;
     font-family: $main-font;
     font-weight: 700;
 }
 
-p,
-span {
-    font-family: $main-font;
+p, span{
+    font-family: $text-font;
     font-weight: 400;
-    text-wrap-style: pretty;
+    text-wrap: pretty;
+}
+
+li {
+    font-family: $text-font;
+    font-weight: 400;
+    text-align: left;
+
+    span {
+        font-family: $main-font;
+        font-weight: 700;
+    }
 }
 
 a {
     font-family: $main-font;
     font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .content {

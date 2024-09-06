@@ -15,11 +15,12 @@
         grid-template-areas: "column1 . column2";
 
         &__column {
-            background-color: black;
+            background-color: rgba(black, 0.8);
             border-radius: 14px;
             padding: 40px 60px;
             border: 2px solid white;
-
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            
             h2 {
                 font-size: 3rem;
                 padding-bottom: 20px;
@@ -38,8 +39,15 @@
                 }
             }
 
-            p {
+            h3 {
+                margin-block: 20px;
                 font-size: 1.6rem;
+                max-width: 380px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
             }
 
             &.column {

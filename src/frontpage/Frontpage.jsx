@@ -16,10 +16,11 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Frontpage() {
 
     const [ modelPosition, setModelPosition ] = useState(0);
+    const [ clipDNA, setClipDNA ] = useState(0);
 
     useEffect(() => {
         ScrollTrigger.create({
-            trigger: '.fpDNA',
+            trigger: '.fpTyping',
             start: 'top bottom-=50',
             end: 'top bottom-=50',
             markers: true,
@@ -28,6 +29,18 @@ export default function Frontpage() {
                 setModelPosition(progress);
             }
         });
+
+        ScrollTrigger.create({
+            trigger: '.fpDNA',
+            start: 'top bottom-=50',
+            end: 'center+=150 bottom',
+            markers: true,
+            onUpdate: (self) => {
+                const progress = self.progress;
+                setClipDNA(progress);
+            }
+        });
+        
     }, []);
     
     return (
@@ -39,7 +52,7 @@ export default function Frontpage() {
         <div className="frontPage">
             <FpHero />
             <FpTyping />
-            <FpDNA />
+            <FpDNA clipDNA={clipDNA} />
             <FpAbout />
             <FpProducts />
             <FpLead />
