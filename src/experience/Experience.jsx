@@ -2,7 +2,6 @@ import { Canvas } from "@react-three/fiber";
 import PerlinNoise from "./perlin/PerlinNoise";
 import '../sass/Experience.scss';
 import DNA from "./model/DNA";
-import { OrbitControls } from "@react-three/drei";
 
 export default function Experience(props) {
     const { modelPosition } = props;

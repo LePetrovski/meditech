@@ -4,18 +4,11 @@ import "../sass/frontpage/fpAbout.scss";
 export default function FpAbout() {
     return (
         <section className="fpAbout">
+            <h2 className="fpAbout__title">TEAM</h2>
+
             <div className="container">
                 <div className="fpAbout__content">
-                    <div className="fpAbout__content__desc">
-                        <h2 className="fpAbout__content__desc__title">Our Team</h2>
-                        <p className="fpAbout__content__desc__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec euismod, nunc nec tristique tincidunt, purus felis ultricies velit, nec dictum libero libero sit amet mi.
-                            Nullam nec vestibulum turpis. Donec nec enim auctor, blandit libero id, scelerisque risus.
-                            Nulla facilisi
-                        </p>
-                    </div>
-
+                
                     <div className="fpAbout__content__columns">
                         <div className="fpAbout__content__columns__column column--1">
                             <figure>
