@@ -2,8 +2,8 @@
     height: 100vh;
     width: 100%;
     background-color:white;
-    border-radius: 28px;
-    border: 4px solid black;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
     padding-bottom: 30px;
     position: relative;
 
@@ -77,6 +77,10 @@
                     font-size: 1.2rem;
                     font-weight: 800;
                     text-align: center;
+                    color: white;
+                    background-color: black;
+                    padding-block: 2px 5px;
+                    border-radius: 12px;
                 }
                
 
