@@ -26,26 +26,67 @@ export default function FpProducts() {
 
     const com = startCom == 1 ? true : false;
 
-
     return (
         <section className="fpProducts">
+            <audio id="audio1" autoPlay={false} loop={false}>
+                <source src="./audio/glitch.mp3" type="audio/mp3"/>
+            </audio>
+            <audio id="audio2" autoPlay={false} loop={false}>
+                <source src="./audio/error.mp3" type="audio/mp3"/>
+            </audio>
+            <audio id="audio3" autoPlay={false} loop={false}>
+                <source src="./audio/beetle1.mp3" type="audio/mp3"/>
+            </audio>
             <div className="container">
                 <div className="fpProducts__content">
                     {com &&
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed once, initially
-                                'Edmund Johnson, CEO & chief scientist',
+                                'HELP',
                                 1000,
-                                'Edmund Johnson, CEO & cHleP',
+                                '[Browser settings : FR-fr]',
+                                600,
+                                'AU SECOURS !',
+                                500,
+                                'STOP',
+                                600,
+                                'Arrêtez de scroller',
+                                600,
+                                'patientez un instant',
+                                600,
+                                '[user OS : Windows 11]',
                                 300,
-                                'Edmund Johnson, CEO & cHLEP',
-                                300,
-                                'Edmund Johnson, CEO & cHELP',
-                                1000
+                                'Je vais essayer un truc...',
+                                () => {
+                                    const audio = new SpeechSynthesisUtterance('Vous m\'entendez ? mouai... pas terrible. Je vais essayer autres choses');
+                                    window.speechSynthesis.speak(audio);
+                                },
+                                5500,
+                                'Juste un instant...',
+                                () => {
+                                    const audio1 = document.getElementById('audio1');
+                                    audio1.play();
+                                },
+                                5500,
+                                'oups, fausse manip...',
+                                1000,
+                                'et si je...',
+                                () => {
+                                    const audio2 = document.getElementById('audio2');
+                                    audio2.play();
+                                },
+                                1000,
+                                'C\'est bon, je crois que j\'ai trouvé !',
+                                () => {
+                                    const audio3 = document.getElementById('audio3');
+                                    audio3.play();
+                                }
+                            
                             ]}
+                            deletionSpeed={80}
                             speed={50}
-                            repeat={Infinity}
+                            repeat={false}
                         />
                     }
                 </div>
