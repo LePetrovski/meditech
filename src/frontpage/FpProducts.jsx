@@ -3,12 +3,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../sass/frontpage/fpProducts.scss";
 import { useEffect, useState } from "react";
+import WindowImage from "../components/WindowImage";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function FpProducts() {
 
     const [ startCom, setStartCom ] = useState(0);
+    const [ window1, setWindow1 ] = useState(false);
 
     useEffect(() => {   
         ScrollTrigger.create({
@@ -39,6 +41,11 @@ export default function FpProducts() {
             </audio>
             <div className="container">
                 <div className="fpProducts__content">
+                    <div className="fpProducts__content__chat">
+                    {window1 &&
+                        <WindowImage name="error" source="error.jpg" />
+                    }
+
                     {com &&
                         <TypeAnimation
                             sequence={[
@@ -67,6 +74,7 @@ export default function FpProducts() {
                                 () => {
                                     const audio1 = document.getElementById('audio1');
                                     audio1.play();
+                                    setWindow1(true);
                                 },
                                 5500,
                                 'oups, fausse manip...',
@@ -89,6 +97,7 @@ export default function FpProducts() {
                             repeat={false}
                         />
                     }
+                    </div>
                 </div>
             </div> 
         </section>
