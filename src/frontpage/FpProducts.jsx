@@ -43,7 +43,7 @@ export default function FpProducts() {
                 <div className="fpProducts__content">
                     <div className="fpProducts__content__chat">
                     {window1 &&
-                        <WindowImage name="error" source="error.jpg" />
+                        <WindowImage className="window1" name="error" source="error.jpg" />
                     }
 
                     {com &&
@@ -74,7 +74,6 @@ export default function FpProducts() {
                                 () => {
                                     const audio1 = document.getElementById('audio1');
                                     audio1.play();
-                                    setWindow1(true);
                                 },
                                 5500,
                                 'oups, fausse manip...',
@@ -83,6 +82,7 @@ export default function FpProducts() {
                                 () => {
                                     const audio2 = document.getElementById('audio2');
                                     audio2.play();
+                                    setWindow1(true);
                                 },
                                 1000,
                                 'C\'est bon, je crois que j\'ai trouvé !',

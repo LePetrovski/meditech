@@ -17,5 +17,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &__chat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+            & span {
+                font-size: 2rem;
+            }
+        }
     }
 }
