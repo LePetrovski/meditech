@@ -1,41 +1,64 @@
 .fpHero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     .container {
-        height: calc(100vh - 120px);
-        padding-top: 120px;
-        max-width: clamp(320px,80%, 1600px);
-        margin: 0 auto;
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "text .";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "text text"
+                             "description experiencce";
     }
 
     &__content {
+        width: 100%;
         grid-area: text;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
         gap: 20px;
         text-align: left;
-        max-width: 650px;
-    }
+        padding-block: 50px;
+        border-bottom: 1px solid black;
 
-    &__title {
-        span{
-            animation: blink both 1s infinite;
+        &__wrapper {
+            max-width: clamp(320px,80%, 1600px);
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center
+        }
+
+        &__title {
+            color: black;
+            span{
+                animation: blink both 1s infinite;
+            }
+        }
+    
+        &__button {
+            font-size: 1.6rem;
+            color: black;
         }
     }
 
-    &__text {
-        font-size: 1.6rem;
-        line-height: 1.5;
-        margin: 0;
+   
+
+    &__experience {
+        height: 100vh;
+        // grid-area: experience;
     }
 
-    &__button {
-        font-size: 1.6rem;
+    &__description {
+        grid-area: description;
+        padding: 50px;
+        height: 100vh;
+        border-right: 1px solid black;
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin: 0;
+            color: black;
+        }
     }
 }
 

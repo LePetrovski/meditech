@@ -4,7 +4,6 @@ import '../sass/Experience.scss';
 import DNA from "./model/DNA";
 
 export default function Experience(props) {
-    const { modelPosition } = props;
 
     return (
         <Canvas
@@ -21,7 +20,7 @@ export default function Experience(props) {
             <ambientLight intensity={5} />
             <directionalLight position={[10, 10, 5]} intensity={1} />
 
-            <DNA scale={0.01} modelPosition={modelPosition}/>
+            <DNA scale={0.01} />
             <PerlinNoise />
         </Canvas>
     )
