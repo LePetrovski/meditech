@@ -26,7 +26,7 @@ export default function WindowImage(props) {
         <div className={`window ${className}`} id={className}>
             <div className="window__head">
                 <div className='window__head__source'>{source}</div>
-                <div className='window__head__close' onClick={toggleHeight}>X</div>
+                <div className='window__head__close' onClick={toggleHeight}>/\ \/</div>
             </div>
             <div className="window__body" style={{ maxHeight, overflow: 'hidden', transition: 'max-height 0.5s ease' }}>
                 <img src={`window/${source}`} alt={name} />

@@ -63,7 +63,7 @@ export default function DNA(props) {
 	const {xp, yp, zp} = useControls(
         'Position', {
            xp: {
-				value: 0.74,
+				value: 0,
 				min: -10,
 				max: 10,
 				step: 0.01

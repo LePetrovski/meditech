@@ -1,16 +1,17 @@
 .fpTyping {
     backdrop-filter: blur(10px);
     width: 100%;
-    margin-bottom: 120px;
+    padding-block: 120px;
+    border-bottom: 1px solid black;
 
     &__content {
-        font-size: 3.4rem;
 
         span {
             font-family: "pragmatapro-fraktur", serif;
             font-weight: 900;
-            -webkit-text-stroke: 3px black;
-            color: white;
+            // -webkit-text-stroke: 4px black;
+            color: black;
+            font-size: clamp(2.5rem, calc(1.375rem + 5.625vw), 7rem) !important;
         }
     }
 }

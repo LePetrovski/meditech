@@ -19,7 +19,7 @@ export default function FpTyping() {
                         1000,
                         'We experiment on Hu',
                         200,
-                        'We experiment on ######',
+                        'We experiment on Rats',
                         1000,
                         'We experiment on Monkeys',
                         1000
