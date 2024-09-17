@@ -20,7 +20,7 @@ export default function Frontpage() {
         ScrollTrigger.create({
             trigger: '.fpDNA',
             start: 'top bottom-=50',
-            end: 'center+=150 bottom',
+            end: 'top+=150 center',
             markers: true,
             onUpdate: (self) => {
                 const progress = self.progress;

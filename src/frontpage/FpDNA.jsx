@@ -32,6 +32,9 @@ export default function FpDNA(props) {
                             <li><span>Research and Development:</span> Ongoing investment in R&D to improve digitization and brain-computer interface technologies.</li>
                         </ul>
                     </div>
+                    <div className="fpDNA__content__picture picture--1">
+                        <img src="dna2.jpg" alt="DNA 1" loading="lazy" />
+                    </div>
                     <div className="fpDNA__content__column column--2">
                         <h2 className="fpDNA__content__title">2_Meditech</h2>
                         <h3>Medical and Advanced Genetic Expertise</h3>
@@ -42,6 +45,9 @@ export default function FpDNA(props) {
                             <li><span>Medical and Ethical Monitoring:</span> Ensuring that all research and applications are conducted in compliance with medical and ethical standards.</li>
                             <li><span>Collaboration with healthcare professionals:</span> Partnerships with medical institutions and experts to guarantee the safety and efficacy of the technologies developed.</li>
                         </ul>
+                    </div>
+                    <div className="fpDNA__content__picture picture--2">
+                        <img src="dna1.jpg" alt="DNA 1" loading="lazy" />
                     </div>
                 </div>
             </div>

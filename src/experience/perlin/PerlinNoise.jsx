@@ -91,17 +91,7 @@ export default function PerlinNoise() {
     return <>
         <color args={[`#ffffff`]} attach='background' />
 
-        {/* <OrbitControls makeDefault /> */}
-
-        {/* <Perf position="top-left" /> */}
-
-        {/* <directionalLight intensity={1} position={[0, 10, 0]} color="red" ref={dirLight} /> */}
-
         <ambientLight intensity={1} />
-        
-        {/* <Plane args={[20, 10]} castShadow >
-            <perlinMaterial ref={ perlinMaterial }/>
-        </Plane> */}
 
         <Center>
             <mesh>
