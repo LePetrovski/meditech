@@ -47,7 +47,8 @@ export default function FpDNA(props) {
                         </ul>
                     </div>
                     <div className="fpDNA__content__picture picture--2">
-                        <img src="dna1.jpg" alt="DNA 1" loading="lazy" />
+                        <img src="dna1.jpg" alt="DNA 1" id="picture1" loading="lazy" />
+                        <img src="dna12.jpg" alt="DNA 12" id="picture2" loading="lazy" />
                     </div>
                 </div>
             </div>

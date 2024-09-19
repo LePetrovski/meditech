@@ -21,11 +21,25 @@ export default function Frontpage() {
             trigger: '.fpDNA',
             start: 'top bottom-=50',
             end: 'top+=150 center',
-            markers: true,
+            markers: false,
             onUpdate: (self) => {
                 const progress = self.progress;
                 setClipDNA(progress);
             }
+        });
+
+        ScrollTrigger.create({
+            trigger: '#picture2',
+            start: 'top bottom-=50',
+            end: 'top center-=400',
+            markers: true,
+            once: true,
+            onLeave: () => {
+                gsap.to('#picture2', {
+                    opacity: 1,
+                    duration: 0.3
+                });
+            },
         });
         
     }, []);

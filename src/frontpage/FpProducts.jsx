@@ -17,7 +17,7 @@ export default function FpProducts() {
             trigger: '.fpProducts',
             start: 'center center',
             end: 'center center',
-            markers: true,
+            markers: false,
             once: true,
             onUpdate: (self) => {
                 const progress = self.progress;
