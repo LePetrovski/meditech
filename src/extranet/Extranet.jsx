@@ -6,11 +6,7 @@ function Extranet() {
 
     return (
         <div>
-            {isAuthenticated ? (
-                <ProtectedPage />
-            ) : (
-                <Login onLogin={handleLogin} />
-            )}
+            <ProtectedPage />
         </div>
     );
 }
