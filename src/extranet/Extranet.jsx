@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import Login from '../extranet/Login';
+import Login from '../components/Login';
 import ProtectedPage from './ProtectedPage';
 
 function Extranet() {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-    const handleLogin = () => {
-        setIsAuthenticated(true);
-    };
 
     return (
         <div>
