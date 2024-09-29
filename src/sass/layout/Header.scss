@@ -30,10 +30,25 @@ $width_medium: calc(120px - 100vw);
     }
 
     &__nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
         height: 100px;
         width: 100%;
         padding-left: 30px;
         backdrop-filter: blur(10px);
+
+        &__login {
+            display: block;
+            position: relative;
+            height:30px;
+            width: 30px;
+            background-image: url('lock.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
     }
 
 }

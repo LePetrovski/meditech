@@ -45,17 +45,15 @@ export default function Frontpage() {
     }, []);
     
     return (
-    <TemplatePage>
 
-        <div className="frontPage">
-            <FpHero />
-            <FpTyping />
-            <FpDNA clipDNA={clipDNA} />
-            <FpAbout />
-            <FpProducts />
-            <FpLead />
-        </div>
+    <div className="frontPage">
+        <FpHero />
+        <FpTyping />
+        <FpDNA clipDNA={clipDNA} />
+        <FpAbout />
+        <FpProducts />
+        <FpLead />
+    </div>
   
-    </TemplatePage>
     );
 }
