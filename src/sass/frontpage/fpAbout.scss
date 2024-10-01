@@ -1,0 +1,79 @@
+.fpAbout {
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-bottom: 30px;
+    position: relative;
+
+    &__title {
+        font-size: clamp(1.725rem, calc(0.4688rem + 3.2813vw), 4rem);
+        width: 100%;
+        font-weight: 700;
+        padding: 50px;
+        color: black;
+        position: relative;
+        line-height: normal;
+        text-align: left;
+        border-bottom: 1px solid black;
+    }
+
+    .container {
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__content {
+        color: black;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+
+        &__columns {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &__column {
+                border: 1px solid black;
+                
+                figure {
+                    margin: 0;
+                }
+
+                &__img {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: top;
+                    transition: all 0.3s ease;
+                }
+
+                figcaption {
+                    font-family: "skolar-sans-latin", sans-serif;;
+                    font-size: 1.4rem;
+                    font-weight: 800;
+                    text-align: center;
+                    color: black;
+                    padding-block: 7px 15px;
+                    border-radius: 12px;
+                }
+               
+
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.fpHero {
+    min-height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "text text"
+                             "description experiencce";
+    }
+
+    &__content {
+        width: 100%;
+        grid-area: text;
+        gap: 20px;
+        text-align: left;
+        padding-block: 50px;
+        border-bottom: 1px solid black;
+
+        &__wrapper {
+            max-width: clamp(320px,80%, 1600px);
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center
+        }
+
+        &__title {
+            color: black;
+            font-size: clamp(1.5rem, calc(0.625rem + 4.375vw), 6rem);;
+            span{
+                animation: blink both 1s infinite;
+            }
+        }
+    
+        &__button {
+            font-size: 1.6rem;
+            color: black;
+        }
+    }
+
+   
+
+    &__experience {
+        height: 100vh;
+        // grid-area: experience;
+    }
+
+    &__description {
+        grid-area: description;
+        padding: 50px;
+        height: 100vh;
+        border-right: 1px solid black;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: end;
+        align-items: flex-end;
+
+        &__text {
+            font-size: clamp(1.6rem, calc(0.625rem + 2.375vw), 3rem);
+            line-height: 1.5;
+            margin: 0;
+            color: black;
+            text-align: left;
+
+        }
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

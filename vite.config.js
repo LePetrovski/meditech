@@ -1,12 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
-const vitePluginSass = require('vite-plugin-sass');
+import glsl from 'vite-plugin-glsl'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    vitePluginSass()
+  plugins: 
+  [
+	react(),
+	glsl()
   ],
+  server: {
+    fs: {
+      allow: ['.']
+    }
+  }
 })
