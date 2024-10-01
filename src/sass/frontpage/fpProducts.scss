@@ -1,4 +1,34 @@
 .fpProducts {
-    height: 80vh;
+    height: 200vh;
     width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px; 
+
+    & .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__chat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+            & span {
+                font-size: 2rem;
+            }
+        }
+    }
 }

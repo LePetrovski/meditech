@@ -1,7 +1,54 @@
+$width_medium: calc(120px - 100vw);
+
 .header {
-    position: fixed;
-    height: 80px;
-    width: 100%;
-    z-index: 2;
+    position: relative;
+    z-index: 99;
     inset: 0;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+
+    .container {
+        height: 100%;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+    }
+
+    &__logo {
+        height: 100px;
+        width: 260px;
+        backdrop-filter: blur(10px);
+        padding-right: 30px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        padding-left: 30px;
+        backdrop-filter: blur(10px);
+
+        &__login {
+            display: block;
+            position: relative;
+            height:30px;
+            width: 30px;
+            background-image: url('lock.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
 }

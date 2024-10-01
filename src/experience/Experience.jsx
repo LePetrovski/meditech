@@ -2,9 +2,9 @@ import { Canvas } from "@react-three/fiber";
 import PerlinNoise from "./perlin/PerlinNoise";
 import '../sass/Experience.scss';
 import DNA from "./model/DNA";
-import { OrbitControls } from "@react-three/drei";
 
-export default function Experience() {
+export default function Experience(props) {
+
     return (
         <Canvas
             flat
@@ -20,7 +20,7 @@ export default function Experience() {
             <ambientLight intensity={5} />
             <directionalLight position={[10, 10, 5]} intensity={1} />
 
-            <DNA scale={0.1} />
+            <DNA scale={0.01} />
             <PerlinNoise />
         </Canvas>
     )
