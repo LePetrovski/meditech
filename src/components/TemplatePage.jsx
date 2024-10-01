@@ -5,7 +5,7 @@ export default function TemplatePage(props) {
     return (
     <>
         <Header />
-            <div>
+            <div className="content">
                 {props.children}
             </div>
         <Footer />
