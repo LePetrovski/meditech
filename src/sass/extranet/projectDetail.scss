@@ -1,0 +1,19 @@
+.projectDetail {
+    color: black;
+
+    &__container {
+        padding-top: 60px;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+    }
+
+    &__header {
+        &__picture {
+            position: relative;
+            max-width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}

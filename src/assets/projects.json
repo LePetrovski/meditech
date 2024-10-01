@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 0,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 1,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 3,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 2,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 4,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 0,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {   
+            "id": 5,
+            "name": "Project 5",
+            "description": "This is project 5",
+            "picture": "project5.jpg",
+            "partner": "partner5.jpg",
+            "status": 1,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        }
+    ]
+}
