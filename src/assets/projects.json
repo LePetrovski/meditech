@@ -12,8 +12,9 @@
         },
         {
             "id": 2,
-            "name": "Project Uroboros",
-            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "name": "Boltendahl initiative",
+            "description": "Our multiple test to create effectives BMCs (Biological Material Collector). New reports from our partners.",
+            "report": "Laboratory tests are good, sales are launch since 2009. Our Childs psychiatrists report our companies are unsuspected. ",
             "picture": "uruboros.jpg",
             "partner": "umbrella.png",
             "status": 1,

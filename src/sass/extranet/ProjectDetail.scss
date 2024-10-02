@@ -5,9 +5,18 @@
         padding-top: 60px;
         max-width: clamp(320px,80%, 1600px);
         margin: 0 auto;
+        position: relative;
+    }
+
+    &__back {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
     }
 
     &__header {
+        display: grid;
         &__picture {
             position: relative;
             max-width: 450px;

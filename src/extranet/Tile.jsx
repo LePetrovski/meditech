@@ -10,9 +10,6 @@ export default function Tile(props) {
             className="tile"
             key={id}
             href="#"
-            initial={{ opacity: 1 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 1 }}
             layoutId={`tile-${id}`}
         >
             <div className="tile__header">
@@ -23,7 +20,8 @@ export default function Tile(props) {
                     layoutId={`picture-${id}`}
                     initial={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.1 }}
+                    exit={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
                 />
                 <motion.img
                     src={`project/${partner}`}
@@ -32,16 +30,11 @@ export default function Tile(props) {
                     layoutId={`partner-${id}`}
                     initial={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.1 }}
+                    exit={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
                 />
             </div>
-            <motion.div 
-                className="tile__content"
-                layoutId={`content-${id}`}
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.1 }}
-            >
+            <div className="tile__content">
                 <h3 className="tile__content__title">{name}</h3>
                 <p className="tile__content__description">{description}</p>
                 <p className="tile__content__more">Learn more</p>
@@ -49,7 +42,7 @@ export default function Tile(props) {
                     <div className="tile__content__tags__status" data-status={status}></div>
                     <div className="tile__content__tags__type">{category}</div>
                 </div>
-            </motion.div>
+            </div>
         </motion.div>
     );
 }

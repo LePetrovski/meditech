@@ -3,11 +3,16 @@ import { TypeAnimation } from "react-type-animation";
 import Tile from './Tile';
 import data from '../assets/projects.json';
 import { Link } from 'react-router-dom';
-
+import { motion } from 'framer-motion';
 function Projects() {
 
     return (
-        <div className='extranet__project'>
+        <motion.div 
+            className='extranet__project'
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <h1>
                 <TypeAnimation
                     sequence={[
@@ -28,12 +33,13 @@ function Projects() {
 
             <div className='extranet__project__list'>
                 {data.projects.map((project) => (
-                    <Link key={project.id} to={`/project/${project.id}`}>
+                    <Link key={project.id} to={`/projects/${project.id}`}>
                         <Tile {...project} />
                     </Link>
                 ))}
             </div>
-        </div>
+        </motion.div>
+        
     );
 }
 

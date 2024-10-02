@@ -11,7 +11,7 @@ function Login({ handleLogin }) {
         e.preventDefault();
         if (username === 'admin' && password === 'admin') {
             handleLogin();
-            navigate('/extranet');
+            navigate('/projects');
         } else {
             alert('Invalid credentials');
         }
