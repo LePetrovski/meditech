@@ -8,12 +8,23 @@ function Extranet() {
     const isProjectDetail = location.pathname.includes('/projects/');
 
     return (
-        <div className="extranet">
-            <div className='extranet__container'>
-                {!isProjectDetail && <Projects />}
-                <Outlet />
-            </div>
-        </div>
+        <>
+            
+            <Outlet />
+
+            {!isProjectDetail && 
+                
+                <div className="extranet">
+
+                    <div className='extranet__container'>
+                        <Projects />
+                    </div>
+
+                </div>
+                
+            }
+            
+        </>
     );
 }
 

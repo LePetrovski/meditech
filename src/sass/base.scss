@@ -4,6 +4,10 @@ $text-font: "skolar-sans-latin", sans-serif;
 html, body {
 overflow-x: hidden;
 background-color: white;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 h1, h2, h3 {

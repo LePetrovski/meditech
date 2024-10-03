@@ -1,7 +1,21 @@
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    } 
+}
+
 .tile {
     background-color: #f9f9f9fe;
     border-radius: 10px;
     color: black;
+    position: relative;
+    z-index: 99;
 
     &:hover {
         color: black;
@@ -80,6 +94,7 @@
                 height: 8px;
                 width: 8px;
                 border-radius: 50%;
+                animation: infinite 3s blink;
 
                 &[data-status="0"] {
                     background-color: red;
@@ -92,7 +107,6 @@
                 &[data-status="2"] {
                     background-color: rgb(35, 234, 0);
                 }
-
             }
             &__type {
                 padding: 4px 16px;

@@ -27,10 +27,10 @@ function ProjectDetail() {
             transition={{ duration: 0.5 }}
         >
             <div className="projectDetail__container">
-            <Link to="/projects" className="projectDetail__back">Back</Link>
+            <Link to="/projects" className="projectDetail__back">Back to list</Link>
                 <div className="projectDetail__header">
                     <motion.img
-                        src={`${project.picture}`}
+                        src={`/project/${project.picture}`}
                         alt="project"
                         className="projectDetail__header__picture"
                         layoutId={`picture-${project.id}`}
@@ -39,16 +39,18 @@ function ProjectDetail() {
                         exit={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
                         />
-                    <motion.img
-                        src={`${project.partner}`}
-                        alt="partner"
-                        className="projectDetail__header__partnership"
-                        layoutId={`partner-${project.id}`}
-                        initial={{ opacity: 1 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 1 }}
-                        transition={{ duration: 0.5 }}
+                        <div className="projectDetail__header__partnership">
+                        <motion.img
+                            src={`/project/${project.partner}`}
+                            alt="partner"
+                            className="projectDetail__header__partnership__logo"
+                            layoutId={`partner-${project.id}`}
+                            initial={{ opacity: 1 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
                         />
+                        </div>
                 </div>
 
                 <div className="project-detail__content">
