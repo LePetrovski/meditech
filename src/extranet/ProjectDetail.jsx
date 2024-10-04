@@ -40,26 +40,46 @@ function ProjectDetail() {
                         transition={{ duration: 0.5 }}
                         />
                         <div className="projectDetail__header__partnership">
-                        <motion.img
-                            src={`/project/${project.partner}`}
-                            alt="partner"
-                            className="projectDetail__header__partnership__logo"
-                            layoutId={`partner-${project.id}`}
-                            initial={{ opacity: 1 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 1 }}
-                            transition={{ duration: 0.5 }}
-                        />
+                            <div className='projectDetail__header__partnership__text'>
+                                <h3>{project.partnerName}</h3>
+                            </div>
+                            <motion.img
+                                src={`/project/${project.partner}`}
+                                alt="partner"
+                                className="projectDetail__header__partnership__logo"
+                                layoutId={`partner-${project.id}`}
+                                initial={{ opacity: 1 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 1 }}
+                                transition={{ duration: 0.5 }}
+                            />
                         </div>
                 </div>
 
-                <div className="project-detail__content">
-                    <h1>{project.name}</h1>
-                    <p>{project.description}</p>
-                    <p>Status: {project.status}</p>
-                    <p>Category: {project.category}</p>
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">Visit project</a>
+                <div className="projectDetail__content">
+                    <div className='projectDetail__content__wrapper'>
+                        <h1 className="projectDetail__content__title">{project.name}</h1>
+                        <p className='projectDetail__content__subtitle'>{project.description}</p>
+                        <div className='projectDetail__content__status'>
+                            Status:
+                            {(() => {
+                                switch(project.status) {
+                                case 0:
+                                    return <p data-status={project.status}>Prototype send</p>
+                                case 1:
+                                    return <p data-status={project.status}>Stagging</p>
+                                case 2:
+                                    return <p data-status={project.status}>Development</p>
+                                default:
+                                    return null
+                                }
+                            })()}
+                        </div>
+                    <p className='projectDetail__content__category'>{project.category}</p>
+                    </div>
                 </div>
+
+                <div className="projectDetail__main" dangerouslySetInnerHTML={{ __html: project.report }} />
                    
             </div>
         </motion.div>
