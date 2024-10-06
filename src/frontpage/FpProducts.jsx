@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../sass/frontpage/fpProducts.scss";
 import { useEffect, useState } from "react";
 import WindowImage from "../components/WindowImage";
+import { use } from "framer-motion/client";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +29,14 @@ export default function FpProducts() {
 
     const com = startCom == 1 ? true : false;
 
+    const numbersAudio = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+    const listAudio = numbersAudio.map((number) => {
+        <audio id={`audio${number}`} autoPlay={false} loop={false}>
+            <source src={`./audio/audio${number}`} type="audio/mp3"/>
+        </audio>
+    });
+    console.log(listAudio)
+
     return (
         <section className="fpProducts">
             <audio id="audio1" autoPlay={false} loop={false}>
@@ -36,9 +45,8 @@ export default function FpProducts() {
             <audio id="audio2" autoPlay={false} loop={false}>
                 <source src="./audio/error.mp3" type="audio/mp3"/>
             </audio>
-            <audio id="audio3" autoPlay={false} loop={false}>
-                <source src="./audio/beetle1.mp3" type="audio/mp3"/>
-            </audio>
+            {listAudio}
+            
             <div className="container">
                 <div className="fpProducts__content">
                     <div className="fpProducts__content__chat">
@@ -62,9 +70,13 @@ export default function FpProducts() {
                                 600,
                                 'patientez un instant',
                                 600,
+                                '[IPv4 : *** *** *** **]',
+                                400,
+                                '[IPv4 : CHECK SUCCESSED]',
+                                500,
                                 '[user OS : Windows 11]',
-                                300,
-                                'Je vais essayer un truc...',
+                                1000,
+                                '[-> Cliquez ici <-], Je vais essayer quelque chose…',
                                 () => {
                                     const audio = new SpeechSynthesisUtterance('Vous m\'entendez ? mouai... pas terrible. Je vais essayer autres choses');
                                     window.speechSynthesis.speak(audio);
