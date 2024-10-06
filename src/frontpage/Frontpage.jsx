@@ -51,7 +51,7 @@ export default function Frontpage() {
         <FpTyping />
         <FpDNA clipDNA={clipDNA} />
         <FpAbout />
-        {/* <FpProducts /> */}
+        <FpProducts />
         <FpLead />
     </div>
   
