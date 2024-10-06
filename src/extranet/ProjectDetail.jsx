@@ -80,6 +80,12 @@ function ProjectDetail() {
                 </div>
 
                 <div className="projectDetail__main" dangerouslySetInnerHTML={{ __html: project.report }} />
+
+                { project.id === 7 &&
+                    <div className="projectDetail__project">
+                        CANVAS
+                    </div>
+                }
                    
             </div>
         </motion.div>

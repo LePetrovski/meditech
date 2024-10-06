@@ -9,49 +9,72 @@
             "partner": "umbrella.png",
             "partnerName": "Umbrella Corporation",
             "status": 0,
-            "category": "Biochemistry",
-            "url": "https://www.google.com"
+            "category": "Biochemistry"
         },
         {
             "id": 2,
             "name": "Boltendahl initiative",
             "description": "Our multiple test to create effectives BMCs (Biological Material Collector). New reports from our partners.",
-            "report": "Laboratory tests are good, sales are launch since 2009. Our Childs psychiatrists report our companies are unsuspected. ",
+            "report": "<h1>Scientific Report on the Zuru Toys Grave Digging Program</h1><p>This report aims to provide a comprehensive analysis of a program designed to train children to unearth corpses using Zuru brand toys. The program, hereafter referred to as the 'Zuru Grave Digging Program,' has raised significant ethical and scientific concerns.</p><h2>Introduction</h2><p>The Zuru Grave Digging Program is an initiative that utilizes Zuru brand toys to train children in the art of grave digging. The program has been met with both curiosity and controversy, prompting a thorough investigation into its methods, outcomes, and implications.</p><h2>Methods</h2><p>The program employs a variety of Zuru toys, including miniature shovels, pickaxes, and other digging tools. Children are instructed in the proper use of these tools and are encouraged to practice digging in simulated grave sites. The training sessions are supervised by certified instructors who provide guidance and ensure safety.</p><h2>Results</h2><p>Preliminary results indicate that children participating in the program demonstrate increased proficiency in digging techniques. However, the psychological impact of the program on the children has not been fully assessed. There are concerns about the potential traumatic effects of exposing children to such activities.</p><h2>Discussion</h2><p>The ethical implications of the Zuru Grave Digging Program are significant. Critics argue that the program desensitizes children to the sanctity of human remains and may have long-term psychological consequences. Proponents, however, claim that the program teaches valuable skills and fosters a sense of responsibility and respect for the deceased.</p><h2>Conclusion</h2><p>Further research is needed to fully understand the impact of the Zuru Grave Digging Program on participating children. Ethical considerations must be carefully weighed against any potential benefits. It is recommended that the program be subject to rigorous oversight and evaluation to ensure the well-being of the children involved.</p>",
             "picture": "tomb.webp",
             "partner": "zuru.png",
-            "status": 1,
-            "category": "Psychology program",
-            "url": "https://www.google.com"
+            "partnerName": "ZURU",
+            "status": 0,
+            "category": "Psychology program"
         },
         {
             "id": 3,
-            "name": "Project Uroboros",
-            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
-            "picture": "uruboros.jpg",
-            "partner": "umbrella.png",
-            "status": 2,
-            "category": "biochemistry",
-            "url": "https://www.google.com"
+            "name": "Mister DNA",
+            "description": "Our collaboration with JP labortary. Third iteration in progress.",
+            "report": "<h1>Scientific Report on DNA Collaboration for Cloning Dinosaurs in Jurassic Park</h1><p>This report provides a detailed analysis of the collaborative efforts in DNA research that led to the successful cloning of dinosaurs for Jurassic Park. The project, a groundbreaking achievement in genetic engineering, has raised numerous scientific and ethical questions.</p><h2>Introduction</h2><p>The Jurassic Park project aimed to bring extinct dinosaur species back to life using advanced DNA cloning techniques. This report explores the methods, results, and implications of this ambitious endeavor.</p><h2>Methods</h2><p>The process involved extracting DNA from fossilized dinosaur remains and filling in the gaps with DNA from modern species, such as frogs. The completed DNA sequences were then used to create viable embryos, which were incubated and hatched in a controlled environment.</p><h2>Results</h2><p>The collaboration resulted in the successful cloning of various dinosaur species, including Tyrannosaurus rex, Velociraptor, and Triceratops. The dinosaurs exhibited behaviors and characteristics consistent with their fossil records, demonstrating the effectiveness of the DNA cloning process.</p><h2>Discussion</h2><p>The ethical implications of cloning extinct species are profound. Critics argue that the project disrupts natural ecosystems and poses significant risks to human safety. Proponents, however, see it as a triumph of scientific innovation and a means to better understand the biology of extinct creatures.</p><h2>Conclusion</h2><p>The Jurassic Park project represents a major advancement in genetic engineering. While the scientific achievements are undeniable, the ethical considerations must be carefully addressed. Future research should focus on mitigating the risks associated with cloning extinct species and ensuring the responsible use of this technology.</p>",
+            "picture": "mr_dna.webp",
+            "partner": "jurassic_park.png",
+            "partnerName": "Jurassic Park",
+            "status": 1,
+            "category": "Biology"
         },
         {
             "id": 4,
-            "name": "Project Uroboros",
-            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
-            "picture": "uruboros.jpg",
-            "partner": "umbrella.png",
-            "status": 0,
-            "category": "biochemistry",
-            "url": "https://www.google.com"
+            "name": "Anomaly's FBC",
+            "description": "Our recent investigations into the Federal Bureau of Control have finally produced results.",
+            "report": "<h1>Investigation Report on Federal Bureau of Control Anomalies</h1><p>This report presents the findings of an investigation into the anomalies observed within the Federal Bureau of Control (FBC). The investigation also explores a potential connection between these anomalies and the events of 'Alan Wake,' another game by the same developer.</p><h2>Introduction</h2><p>The Federal Bureau of Control is a secretive government agency tasked with investigating and containing phenomena that defy the laws of nature. This report aims to shed light on the nature of these anomalies and their possible link to the supernatural occurrences in the town of Bright Falls, as depicted in 'Alan Wake.'</p><h2>Methods</h2><p>The investigation involved covert surveillance of FBC activities, analysis of classified documents, and interviews with former FBC employees. Additionally, comparative analysis was conducted between the anomalies observed in 'Control' and the supernatural events in 'Alan Wake.'</p><h2>Results</h2><p>The investigation revealed several key anomalies within the FBC, including the Hiss, a malevolent force that possesses and controls individuals. Other anomalies include Altered Items, ordinary objects imbued with supernatural properties, and the Astral Plane, a dimension that intersects with our reality.</p><p>Comparative analysis suggests striking similarities between the Hiss and the Dark Presence from 'Alan Wake.' Both entities exhibit the ability to manipulate reality and possess individuals. Additionally, the Astral Plane bears resemblance to the Dark Place, a realm of darkness and fear in 'Alan Wake.'</p><h2>Discussion</h2><p>The similarities between the anomalies in 'Control' and the supernatural events in 'Alan Wake' suggest a shared universe or a common underlying force. This connection raises questions about the true nature of these phenomena and the extent of their influence on our reality.</p><p>Furthermore, the investigation highlights the ethical implications of the FBC's methods, including the containment and study of these anomalies without public knowledge or oversight.</p><h2>Conclusion</h2><p>The investigation into the anomalies of the Federal Bureau of Control has uncovered significant evidence of a connection to the events of 'Alan Wake.' While the full extent of this connection remains unclear, it is evident that these phenomena pose a significant threat to public safety and warrant further investigation.</p><p>Recommendations include increased transparency and oversight of the FBC's activities, as well as continued research into the nature and origins of these anomalies.</p>",
+            "picture": "glitch.jpg",
+            "partner": "bureau.webp",
+            "partnerName": "Federal Bureau of Control",
+            "status": 2,
+            "category": "Paranormal"
         },
         {   
             "id": 5,
-            "name": "Project 5",
-            "description": "This is project 5",
-            "picture": "project5.jpg",
-            "partner": "partner5.jpg",
+            "name": "WayBackBrain",
+            "description": "CONFIDENTIAL",
+            "report": "<h1>WAYBACKBRAIN Project</h1><h2>Introduction</h2><p>The WAYBACKBRAIN project is a revolutionary innovation in the field of virtual reality and neuroscience. This report presents the results of the initial experimentation as well as future projects for the development of this technology.</p><h2>Experimentation Objectives</h2><p>The primary objective of this experimentation is to test the ability of the VR headset module to allow users to relive pre-recorded memories. The memories are stored in a prototype VR headset and can be activated by users for total immersion.</p><h2>Prototype Description</h2><p>The prototype VR headset is equipped with a specialized module capable of reading and projecting pre-recorded memories. The headset uses a combination of virtual reality and neuroscience technologies to recreate complete sensory experiences.</p><h2>Experimentation</h2><p>The experimentation was conducted with two pre-recorded memories in the prototype headset. Due to the experimental and dangerous nature of the synchronization process, we are implementing a rigorous admission test for the testing phase. This procedure was put in place after the accidental death of two test subjects.</p><p>The memories we have recorded are important to us and will require a complete debriefing of the subject.</p><h2>Memory 1</h2><div><h3>Description of Memory 1</h3><p>Memory taken from a corpse found near the Paradise Hotel. First unreported security breach of the T-virus. A scientist from the Alpha laboratory of Umbrella Corporation improperly confined samples he was transporting. His negligence resulted in the death of 115 civilians. The hotel was wiped off the map 1 month after the incident.</p><p>Our investigations into the Umbrella group allowed us to recover this body. The threat of leaking this information now allows us to have a beneficial collaboration on the Plagas project.</p><img src='/project/paradise.webp' alt='hotel'></div><h2>Memory 2</h2><div><h3>Description of Memory 2</h3><p>////////////////////CONFIDENTIAL///////////////////</p></div><h2>Results</h2><p>We are awaiting feedback on the subject. However, the few results so far seem promising.</p><h2>Future Projects</h2><p>Based on the positive results of this experimentation, several future projects are envisioned for the WAYBACKBRAIN project:</p><ul><li>Technology Improvement: Continue to develop and improve the VR headset module to increase the accuracy and quality of the projected memories.</li><li>Memory Personalization: Explore ways to allow users to personalize and store their own memories in the headset.</li><li>Therapeutic Applications: Study the potential applications of this technology in the field of therapy, particularly for the treatment of post-traumatic stress disorder (PTSD) and other mental conditions. The sale to armies or companies for industrial espionage is also to be explored.</li><li>Market Studies: Conduct market studies to evaluate the interest and demand for this technology among different demographic groups.</li></ul><h2>Conclusion</h2><p>The experimentation of the VR headset module for reliving memories has been a success, demonstrating the potential of this innovative technology. Future projects aim to improve and expand the applications of this technology, paving the way for new possibilities in the fields of virtual reality and neuroscience.</p>",
+            "picture": "brain.jpg",
+            "partner": "oculus.png",
+            "partnerName": "Oculus",
+            "status": 0,
+            "category": "Biodynamics"
+        },
+        {   
+            "id": 6,
+            "name": "/////////////",
+            "description": "//////////////////// ////////////////////////////////// /////////////////// ////////////// ///////////// ///////// ///////////// ////////////////// //////// ///// / ////// //////////",
+            "report": "<h1>We had to desctruct this thing.</h1><p>We tried but we can't. Help us. </br>We had to seal it and forget it forever.</p>",
+            "picture": "black.jpg",
+            "partner": "warning.png",
+            "partnerName": "WARNING",
+            "status": 0,
+            "category": "Omega"
+        },
+        {   
+            "id": 7,
+            "name": "Star destroyer",
+            "description": "********** ******** ** ****** *** ******* ** ** ********** through galaxy.",
+            "picture": "satelite.jpeg",
+            "partner": "starlink.png",
+            "partnerName": "StarLink",
             "status": 1,
-            "category": "biochemistry",
-            "url": "https://www.google.com"
+            "category": "biochemistry"
         }
     ]
 }
