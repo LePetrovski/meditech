@@ -11,7 +11,7 @@ $width_medium: calc(120px - 100vw);
 
     .container {
         height: 100%;
-        max-width: clamp(320px,80%, 1600px);
+        padding-inline: 50px;
         margin: 0 auto;
     }
 
@@ -34,17 +34,17 @@ $width_medium: calc(120px - 100vw);
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
-        height: 100px;
-        width: 100%;
-        padding-left: 30px;
+        height: 100%;
         backdrop-filter: blur(10px);
+        padding-left: 50px;
+        border-left: 1px solid black;
 
         &__login {
             display: block;
             position: relative;
             height:30px;
             width: 30px;
-            background-image: url('lock.png');
+            background-image: url('/lock.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

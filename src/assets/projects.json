@@ -1,0 +1,57 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project Plagas",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "report": "<h1>Umbrella Chronicles: Virus Plagas Report</h1>\n\n<h2>1. Introduction</h2>\n\n<p>This report aims to provide a comprehensive overview of the Virus Plagas (Plaga Parasites) encountered in the Umbrella Chronicles, a series of video games and related media in the Resident Evil universe.</p>\n\n<h2>2. Origin and Development</h2>\n\n<p>The Plagas were discovered and studied by Osmund Saddler, the leader of the Los Iluminados cult, in a remote village in Spain. Umbrella Corporation, notorious for its bio-weapon research, took an interest in the Plagas due to their potential as a bio-organic weapon.</p>\n\n<h2>3. Biological Characteristics</h2>\n\n<h3>3.1. Appearance</h3>\n\n<p>Plagas appear as small, grey, slug-like creatures. They possess a single eye and a set of legs or tentacles, depending on their stage of development.</p>\n\n<h3>3.2. Life Cycle</h3>\n\n<p>Plagas have a three-stage life cycle: Egg, Immature form, and Adult form. They are typically injected into a host in their immature form.</p>\n\n<h3>3.3. Host Integration</h3>\n\n<p>Upon entering a host, a Plaga will attach itself to the spinal cord, allowing it to control the host's nervous system. This results in increased strength, agility, and aggression in the host.</p>\n\n<h2>4. Variants</h2>\n\n<h3>4.1. Control Plagas</h3>\n\n<p>Used to control and command other Plaga-infected hosts. They emit ultrasonic waves that can manipulate the actions of lesser Plagas.</p>\n\n<h3>4.2. Assault Plagas</h3>\n\n<p>These Plagas enhance the host's physical capabilities, turning them into formidable combatants.</p>\n\n<h3>4.3. Regenerator Plagas</h3>\n\n<p>A unique variant that grants the host rapid cellular regeneration, making them extremely difficult to kill.</p>\n\n<h2>5. Notable Hosts</h2>\n\n<h3>5.1. Ganados</h3>\n\n<p>The most common Plaga hosts are the Ganados, Spanish for \"cattle.\" They are humans infected with the Plaga parasite, exhibiting increased aggression and physical prowess.</p>\n\n<h3>5.2. Special Ganados</h3>\n\n<p>Certain Ganados undergo further mutation, becoming more powerful enemies such as the Chainsaw Ganado, Garrador, and Verdugo.</p>\n\n<h2>6. Countermeasures</h2>\n\n<h3>6.1. Flash Grenades</h3>\n\n<p>High-intensity light and sound can temporarily stun Plaga-infected hosts, making them susceptible to attack.</p>\n\n<h3>6.2. Incendiary Devices</h3>\n\n<p>Plagas are highly vulnerable to heat and fire. Incendiary grenades and flame-based weapons are particularly effective against them.</p>\n\n<h2>7. Umbrella Corporation's Involvement</h2>\n\n<p>Umbrella Corporation conducted extensive research on the Plagas, aiming to weaponize them for military applications. However, their plans were disrupted when the Los Iluminados cult used the Plagas to further their own agenda.</p>\n\n<h2>8. Conclusion</h2>\n\n<p>The Virus Plagas represent a significant biological threat due to their ability to control and enhance human hosts. Understanding their biology and vulnerabilities is crucial for developing effective countermeasures against potential future outbreaks.</p>\n\n<h2>9. Recommendations</h2>\n\n<p>Further research should focus on developing a vaccine or cure for Plaga infections, as well as refining existing countermeasures to better combat Plaga-infected hosts.</p>\n\n<p><strong>End of Report</strong></p>\n\n<p><em>Prepared by:</em></p>\n<p><em>Elyne Johnson</em></p>\n<p><em>head of research</em></p>\n<p><em>2021/04/02</em></p>",
+            "picture": "plagas.jpg",
+            "partner": "umbrella.png",
+            "partnerName": "Umbrella Corporation",
+            "status": 0,
+            "category": "Biochemistry",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "Boltendahl initiative",
+            "description": "Our multiple test to create effectives BMCs (Biological Material Collector). New reports from our partners.",
+            "report": "Laboratory tests are good, sales are launch since 2009. Our Childs psychiatrists report our companies are unsuspected. ",
+            "picture": "tomb.webp",
+            "partner": "zuru.png",
+            "status": 1,
+            "category": "Psychology program",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 3,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 2,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {
+            "id": 4,
+            "name": "Project Uroboros",
+            "description": "Our collaboration on the Type A plague Virus. Report on the first tests.",
+            "picture": "uruboros.jpg",
+            "partner": "umbrella.png",
+            "status": 0,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        },
+        {   
+            "id": 5,
+            "name": "Project 5",
+            "description": "This is project 5",
+            "picture": "project5.jpg",
+            "partner": "partner5.jpg",
+            "status": 1,
+            "category": "biochemistry",
+            "url": "https://www.google.com"
+        }
+    ]
+}
