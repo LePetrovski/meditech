@@ -75,6 +75,16 @@
             "partnerName": "StarLink",
             "status": 1,
             "category": "biochemistry"
+        },
+        {   
+            "id": 8,
+            "name": "HumanDotNet Experience",
+            "description": "New version of the old project Deus Ex Machina. We are now able to create the next generation of Transhumanity.",
+            "picture": "satelite.jpeg",
+            "partner": "starlink.png",
+            "partnerName": "StarLink",
+            "status": 1,
+            "category": "Technology"
         }
     ]
 }
