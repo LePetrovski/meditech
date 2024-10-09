@@ -7,7 +7,7 @@ export default function Earth(props) {
     const group = useRef()
 
     useFrame((state, delta) => {
-        group.current.rotation.y += delta * 0.1
+        group.current.rotation.y += delta * 0.01
     })
 
     return (
