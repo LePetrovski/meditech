@@ -1,7 +1,7 @@
 import { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import '../sass/StarDestroyer.scss';
-import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
 import Satellite from "./model/Satellite";
 import { Center, OrbitControls } from "@react-three/drei";
 import Earth from "./model/Earth";
@@ -10,19 +10,19 @@ import Loader from "../components/Loader";
 export default function StarDestroyer(props) {
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 7500); // 8 seconds delay
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setLoading(false);
+    //     }, 7500); // 8 seconds delay
 
-        return () => clearTimeout(timer);
-    }, []);
+    //     return () => clearTimeout(timer);
+    // }, []);
 
     return (
         <>
-            {loading ? (
+            {/* {loading ? (
                 <Loader />
-            ) : (
+            ) : ( */}
                 <Canvas
                     flat
                     camera={{
@@ -34,11 +34,12 @@ export default function StarDestroyer(props) {
                 >
                     <Suspense fallback={null}>
                         <color attach={"background"} args={[0x000000]} />
-                        <directionalLight position={[10, 10, 5]} intensity={10} />
+                        <directionalLight position={[12, 3, 6]} intensity={10} />
                         <Center>
                             <OrbitControls />
                             <Earth scale={0.01} />
-                            <Satellite scale={0.1} position={[1, 1, 1]} />
+                            <Satellite scale={0.03} position={[1.3, 0.2, 1]} />
+
                         </Center>
                         <EffectComposer>
                             {/* <DepthOfField focusDistance={0} focalLength={0.02} bokehScale={2} height={480} /> */}
@@ -48,7 +49,7 @@ export default function StarDestroyer(props) {
                         </EffectComposer>
                     </Suspense>
                 </Canvas>
-            )}
+            {/* )} */}
         </>
     );
 }

@@ -1,10 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function Earth(props) {
     const { nodes, materials } = useGLTF('/model/earth_1.glb')
     const group = useRef()
+
+    useEffect(() => {
+      group.current.rotation.z = Math.PI * 0.2
+    }, [])
 
     useFrame((state, delta) => {
         group.current.rotation.y += delta * 0.01
