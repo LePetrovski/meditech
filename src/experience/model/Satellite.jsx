@@ -20,7 +20,7 @@ export default function Satellite(props) {
 
   return (
     <group {...props} dispose={null} ref={orbitGroup}>
-		<PerspectiveCamera makeDefault position={[0, 0, 0]} />
+				<PerspectiveCamera makeDefault position={[0, 0, 0]} />
 		<group rotation={[-Math.PI / 2, 0, 0]}>
 			<mesh
 				castShadow
