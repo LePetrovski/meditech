@@ -1,11 +1,8 @@
-import { Suspense, useState, useEffect } from "react";
+import { useState} from "react";
 import { Canvas } from "@react-three/fiber";
 import '../sass/StarDestroyer.scss';
-import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
-import Satellite from "./model/Satellite";
-import { Center, OrbitControls } from "@react-three/drei";
-import Earth from "./model/Earth";
-import Loader from "../components/Loader";
+
+import StarDestroyerExperience from "./StarDestroyerExperience";
 
 export default function StarDestroyer(props) {
     const [loading, setLoading] = useState(true);
@@ -32,23 +29,11 @@ export default function StarDestroyer(props) {
                         far: 200
                     }}
                 >
-                    <Suspense fallback={null}>
-                        <color attach={"background"} args={[0x000000]} />
-                        <directionalLight position={[12, 3, 6]} intensity={10} />
-                        <Center>
-                            <OrbitControls />
-                            <Earth scale={0.01} />
-                            <Satellite scale={0.03} position={[1.3, 0.2, 1]} />
-
-                        </Center>
-                        <EffectComposer>
-                            {/* <DepthOfField focusDistance={0} focalLength={0.02} bokehScale={2} height={480} /> */}
-                            <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={300} />
-                            <Noise opacity={0.02} />
-                            <Vignette eskil={false} offset={0.1} darkness={1.1} />
-                        </EffectComposer>
-                    </Suspense>
+                    <StarDestroyerExperience />
+                  
                 </Canvas>
+                {/* il faut mettre la div en absolute par dessus et on appuie sur Entree pour lancer le compte à rebours */}
+                <div className="">Use Keyboard to manipulate StarDestroyer ! Press Enter when target insight</div>
             {/* )} */}
         </>
     );

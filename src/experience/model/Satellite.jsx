@@ -1,42 +1,100 @@
 import { PerspectiveCamera, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
+import { Leva, useControls } from "leva";
+import { useEffect, useRef, useState } from "react";
 
 export default function Satellite(props) {
-    const { nodes, materials } = useGLTF('/model/satellite.glb')
-	const orbitGroup = useRef()
-	const radius = 1.4; // Rayon de l'orbite
+    const { nodes, materials } = useGLTF('/model/satellite.glb');
+    const orbitGroup = useRef();
+	const cameraRef = useRef();
+    const radius = 1.4; // Rayon de l'orbite
     let angle = 0; // Angle initial
+	
+	const {xr, yr, zr} = useControls(
+        'Rotation', {
+            xr: {
+				value: -3.14,
+				min: -Math.PI,
+				max: Math.PI,
+				step: 0.01
+			},
+			yr: {
+				value: 0,
+				min: -Math.PI,
+				max: Math.PI,
+				step: 0.01
+			},
+			zr: {
+				value: -0.3,
+				min: -Math.PI,
+				max: Math.PI,
+				step: 0.01
+			}
+        }
+    )
 
-	useEffect(() => {
-		orbitGroup.current.rotation.z = Math.PI * 0.4
-	});
+    const [rotation, setRotation] = useState({ x: 0, y: 0, z: Math.PI * 0.4 });
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            switch (event.key) {
+                case 'ArrowUp':
+                    setRotation((prev) => ({ ...prev, x: prev.x + 0.1 }));
+                    break;
+                case 'ArrowDown':
+                    setRotation((prev) => ({ ...prev, x: prev.x - 0.1 }));
+                    break;
+                case 'ArrowLeft':
+                    setRotation((prev) => ({ ...prev, y: prev.y + 0.1 }));
+                    break;
+                case 'ArrowRight':
+                    setRotation((prev) => ({ ...prev, y: prev.y - 0.1 }));
+                    break;
+                default:
+                    break;
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
+
+    useEffect(() => {
+        orbitGroup.current.rotation.set(rotation.x, rotation.y, rotation.z);
+    }, [rotation]);
 
     useFrame((state, delta) => {
-  		angle -= (delta / 20) * 0.3; // Ajustez la vitesse de rotation ici
+        angle -= (delta / 20) * 0.3; // Ajustez la vitesse de rotation ici
         orbitGroup.current.position.x = -(radius * Math.cos(angle));
-        orbitGroup.current.position.z = -(radius * Math.sin(angle));
-    })
+		cameraRef.current.rotation.set(xr, yr, zr);
+        // orbitGroup.current.position.z = -(radius * Math.sin(angle));
+    });
 
-  return (
-    <group {...props} dispose={null} ref={orbitGroup}>
-				<PerspectiveCamera makeDefault position={[0, 0, 0]} />
-		<group rotation={[-Math.PI / 2, 0, 0]}>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Object_2.geometry}
-				material={materials.Satellite}
-			/>
-			<mesh
-				castShadow
-				receiveShadow
-				geometry={nodes.Object_3.geometry}
-				material={materials.Satellite2}
-			/>
-		</group>
-    </group>
-  )
+    return (
+		<>
+			<Leva hidden={true} />
+			<group {...props} dispose={null} ref={orbitGroup}>
+				<PerspectiveCamera makeDefault position={[0, 0, 0]} ref={cameraRef} rotate={[-3.14, 0, -0.3]} />
+				<group rotation={[-Math.PI / 1, 0, 0]}>
+					<mesh
+						castShadow
+						receiveShadow
+						geometry={nodes.Object_2.geometry}
+						material={materials.Satellite}
+					/>
+					<mesh
+						castShadow
+						receiveShadow
+						geometry={nodes.Object_3.geometry}
+						material={materials.Satellite2}
+					/>
+				</group>
+			</group>
+		</>
+    );
 }
 
-useGLTF.preload('/model/satellite.glb')
+useGLTF.preload('/model/satellite.glb');
