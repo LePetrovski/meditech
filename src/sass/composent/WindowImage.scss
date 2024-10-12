@@ -1,9 +1,16 @@
 .window {
     position: absolute;
-    top: 100px;
-    left: 250px;
-    max-width: 400px;
+    max-width: 340px;
+    min-width: 140px;
     border: 1px solid black;
+
+    @for $i from 1 through 10 {
+        &#{$i} {
+            top: random(50) + vh;
+            left: random(50) + vw;
+        }
+
+    }
 
     &__head {
         height: 30px;

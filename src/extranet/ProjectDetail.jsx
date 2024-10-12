@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import projectsData from '../assets/projects.json';
 import '../sass/extranet/ProjectDetail.scss';
+import StarDestroyer from '../experience/StartDestroyer';
 
 function ProjectDetail() {
     const { id } = useParams();
@@ -80,6 +81,12 @@ function ProjectDetail() {
                 </div>
 
                 <div className="projectDetail__main" dangerouslySetInnerHTML={{ __html: project.report }} />
+
+                { project.id === 7 &&
+                    <div className="projectDetail__project starDestroyer">
+                        <StarDestroyer />
+                    </div>
+                }
                    
             </div>
         </motion.div>
