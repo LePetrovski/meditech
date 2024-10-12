@@ -1,12 +1,17 @@
 .starDestroyer {
     display: block;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     inset: 0;
     z-index: 0;
     pointer-events: none;
     background-color: black;
+
+    audio {
+        opacity: 0;
+        pointer-events: none;
+    }
 
     &__overlay {
         position: absolute;
@@ -68,6 +73,28 @@
             right: 0;
             height: 160px;
             width: auto;
+        }
+
+        &__shutdown {
+            position: absolute;
+            inset: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 40%;
+            z-index: 10;
+            font-weight: 600;
+            font-size: 2rem;
+            color: red;
+            z-index: 2;
+            background-color: rgb(25, 25, 25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 800;
+            }
         }
     }
 

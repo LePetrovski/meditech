@@ -5,11 +5,12 @@ import "../sass/frontpage/fpProducts.scss";
 import { useEffect, useState } from "react";
 import WindowImage from "../components/WindowImage";
 import { use } from "framer-motion/client";
+import { useAudioPlayer } from "react-use-audio-player";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function FpProducts() {
-
+    const { load } = useAudioPlayer();
     const [ startCom, setStartCom ] = useState(0);
     const [ window1, setWindow1 ] = useState(false);
 
@@ -84,8 +85,13 @@ export default function FpProducts() {
                                 5500,
                                 'Juste un instant...',
                                 () => {
-                                    const audio1 = document.getElementById('audio1');
-                                    audio1.play();
+                                    // const audio1 = document.getElementById('audio1');
+                                    // audio1.play();
+                                    load('./audio/glitch.mp3',
+                                        {
+                                            autoplay: true,
+                                        }
+                                    )
                                 },
                                 5500,
                                 'oups, fausse manip...',

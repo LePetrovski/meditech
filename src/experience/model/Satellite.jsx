@@ -2,6 +2,7 @@ import { PerspectiveCamera, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { Leva, useControls } from "leva";
 import { useEffect, useRef, useState } from "react";
+import { useAudioPlayer } from "react-use-audio-player";
 
 export default function Satellite(props) {
     const { nodes, materials } = useGLTF('/model/satellite.glb');
@@ -9,6 +10,8 @@ export default function Satellite(props) {
 	const cameraRef = useRef();
     const radius = 1.4; // Rayon de l'orbite
     let angle = 0; // Angle initial
+
+    const airPlayer = useAudioPlayer();
 	
 	const {xr, yr, zr} = useControls(
         'Rotation', {
@@ -40,15 +43,35 @@ export default function Satellite(props) {
             switch (event.key) {
                 case 'ArrowUp':
                     setRotation((prev) => ({ ...prev, x: prev.x + 0.1 }));
+                    airPlayer.load('../audio/star/air.mp3', 
+                        {
+                            autoplay: true,
+                        }
+                    )
                     break;
                 case 'ArrowDown':
                     setRotation((prev) => ({ ...prev, x: prev.x - 0.1 }));
+                    airPlayer.load('../audio/star/air.mp3', 
+                        {
+                            autoplay: true,
+                        }
+                    )
                     break;
                 case 'ArrowLeft':
                     setRotation((prev) => ({ ...prev, y: prev.y + 0.1 }));
+                    airPlayer.load('../audio/star/air.mp3', 
+                        {
+                            autoplay: true,
+                        }
+                    )
                     break;
                 case 'ArrowRight':
                     setRotation((prev) => ({ ...prev, y: prev.y - 0.1 }));
+                    airPlayer.load('../audio/star/air.mp3', 
+                        {
+                            autoplay: true,
+                        }
+                    )
                     break;
                 default:
                     break;

@@ -69,12 +69,12 @@
         {   
             "id": 7,
             "name": "Star destroyer",
-            "description": "********** ******** ** ****** *** ******* ** ** ********** through galaxy.",
+            "description": "********** ******** ** ****** *** ******* ** ** ********** through galaxy. Be aware that access this project initiate external connexion.",
             "picture": "satelite.jpeg",
             "partner": "starlink.png",
             "partnerName": "StarLink",
             "status": 1,
-            "category": "biochemistry"
+            "category": "MASTER"
         },
         {   
             "id": 8,
