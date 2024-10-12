@@ -1,8 +1,9 @@
 .window {
     position: absolute;
-    top: random(100) + vw;
-    left: random(250) + vh;
+    top: random(80) + vw;
+    left: random(70) + vh;
     max-width: 340px;
+    min-width: 140px;
     border: 1px solid black;
 
     &__head {

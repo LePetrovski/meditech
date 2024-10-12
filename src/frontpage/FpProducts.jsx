@@ -31,12 +31,15 @@ export default function FpProducts() {
     const com = startCom == 1 ? true : false;
 
     const numbersAudio = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+    console.log(numbersAudio);
     const listAudio = numbersAudio.map((number) => {
-        <audio id={`audio${number}`} autoPlay={false} loop={false}>
-            <source src={`./audio/audio${number}`} type="audio/mp3"/>
-        </audio>
+        return (
+            <audio id={`audio${number}`} autoPlay={false} loop={false} key={number}>
+                <source src={`./audio/audio${number}.mp3`} type="audio/mp3" />
+            </audio>
+        );
     });
-    console.log(listAudio)
+    console.log(listAudio);
 
     return (
         <section className="fpProducts">
@@ -107,7 +110,13 @@ export default function FpProducts() {
                                 () => {
                                     const audio3 = document.getElementById('audio3');
                                     audio3.play();
-                                }
+                                },
+                                17000,
+                                'Votre pouvoir est important',
+                                () => {
+                                    const audio4 = document.getElementById('audio4');
+                                    audio4.play();
+                                },
                             
                             ]}
                             deletionSpeed={80}
