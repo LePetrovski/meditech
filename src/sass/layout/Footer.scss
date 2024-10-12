@@ -3,4 +3,47 @@
     position: relative;
     width: 100%;
     z-index: 3;
+    border: 1px solid black;
+
+    & .container {
+        height: 100%;
+        padding-inline: 50px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-areas: "contact social media";
+        
+        &__left {
+            grid-area: contact;
+            color: black;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items:flex-start;
+            border-right: 1px solid black;
+            padding-block: 20px;
+
+            &__logo {
+                max-width: 200px;
+
+                height: auto;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 900;
+                margin-top: 10px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 10px 0 0 0;
+                width: 260px;
+                text-align: left;
+            }
+        }
+    }
 }

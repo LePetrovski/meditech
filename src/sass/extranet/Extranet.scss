@@ -1,0 +1,31 @@
+.extranet {
+    color: black;
+
+    &__container {
+        padding-top: 60px;
+        max-width: clamp(320px,80%, 1600px);
+        margin: 0 auto;
+    }
+
+    &__project {
+        width: 100%;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            font-family:"skolar-sans-latin", sans-serif;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+    }
+}

@@ -9,9 +9,9 @@ function Login({ handleLogin }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (username === 'admin' && password === 'chapichapo') {
+        if (username === 'admin' && password === 'admin') {
             handleLogin();
-            navigate('/extranet');
+            navigate('/projects');
         } else {
             alert('Invalid credentials');
         }
@@ -28,11 +28,11 @@ function Login({ handleLogin }) {
 
                 <div className='loginPage__wrapper'>
 
-                    <h2>Acces à l'Extranet</h2>
+                    <h2>Extranet Access</h2>
 
                     <form onSubmit={handleSubmit}>
                         <div>
-                            <label>Identifiant:</label>
+                            <label>Login:</label>
                             <input
                                 type="text"
                                 value={username}
@@ -40,17 +40,17 @@ function Login({ handleLogin }) {
                             />
                         </div>
                         <div>
-                            <label>Mot de passe:</label>
+                            <label>Password:</label>
                             <input
                                 type="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
-                        <button type="submit">Connexion</button>
+                        <button type="submit">Submit</button>
                     </form>
 
-                    <a href="#" onClick={handleForgotPassword}>mot de passe oublié</a>
+                    <a href="#" onClick={handleForgotPassword}>forget password</a>
 
                 </div>
 

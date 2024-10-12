@@ -21,7 +21,7 @@
         border-bottom: 1px solid black;
 
         &__wrapper {
-            max-width: clamp(320px,80%, 1600px);
+            padding-inline: 50px;
             margin: 0 auto;
             display: flex;
             flex-flow: column nowrap;

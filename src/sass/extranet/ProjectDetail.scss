@@ -1,0 +1,171 @@
+.projectDetail {
+    color: black;
+
+    &__container {
+        position: relative;
+        display: grid;
+        height: 100%;
+        overflow: visible;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "header content"
+                             "main content";
+     
+    }
+
+    &__back {
+        position: absolute;
+        inset: 15px;
+        max-width: max-content;
+        max-height: max-content;
+        z-index: 1;
+        padding: 6px 14px;
+        background-color: #ffffff;
+        color: black;
+        border-radius: 14px;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "skolar-sans-latin", sans-serif;
+    }
+
+    &__header {
+        display: grid;
+        grid-area: header;
+        position: relative;
+
+        &__picture {
+            position: relative;
+            height: calc( 100vh - 122px);
+            width: 70vw;
+            object-fit: cover;
+            object-position: top;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        &__partnership {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-width: 200px;
+            height: 200px;
+            border-top-right-radius: 14px;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 1fr 70%;
+            grid-template-areas: "text"
+                                 "logo";
+
+            &__text {
+                grid-area: text;
+                border-bottom: 1px solid black;
+                align-self: center;
+                justify-self: center;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                h3 {
+                    text-wrap: pretty;
+                    max-width: 180px;
+                }
+            }
+
+            &__logo {
+                grid-area: logo;
+                height: auto;
+                height: 70%;
+                object-fit: cover;
+                object-position: center;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+
+    &__content {
+        padding: 10px;
+        text-align: left;
+        grid-area: content;
+        overflow: visible;
+        border-left: 1px solid black;
+
+        &__wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            top: 0;
+            height: max-content;
+        }
+
+        &__title{}
+
+        &__subtitle {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &__status {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 8px;
+            font-size: 1.125rem;
+
+            p {
+                font-weight: 600;
+                font-style: italic;
+
+                &[data-status="0"] {
+                    color: red;
+                }
+    
+                &[data-status="1"] {
+                    color: rgb(0, 149, 235);
+                }
+    
+                &[data-status="2"] {
+                    color: rgb(35, 234, 0);
+                }
+            }
+        }
+
+        &__category {
+            padding: 4px 16px;
+            margin: 0;
+            border: solid 1px black;
+            border-radius: 20px;
+        }
+    }
+
+    &__main {
+        grid-area: main;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+        text-wrap: pretty;
+        margin-top: 40px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+        }
+
+    }
+}

@@ -32,7 +32,7 @@ export default function Frontpage() {
             trigger: '#picture2',
             start: 'top bottom-=50',
             end: 'top center-=400',
-            markers: true,
+            markers: false,
             once: true,
             onLeave: () => {
                 gsap.to('#picture2', {

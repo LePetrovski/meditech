@@ -1,0 +1,32 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+.loader__bar {
+    width: 100px;
+    height: 10px;
+    background-color: #555;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.loader__bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0f0;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.loader__text {
+    font-size: 14px;
+}

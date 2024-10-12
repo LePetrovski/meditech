@@ -1,4 +1,17 @@
 .fpLead {
-    height: 100vh;
+    backdrop-filter: blur(10px);
     width: 100%;
+    padding-block: 60px;
+    border-bottom: 1px solid black;
+
+    &__content {
+
+        span {
+            font-family: "pragmatapro-fraktur", serif;
+            font-weight: 900;
+            // -webkit-text-stroke: 4px black;
+            color: black;
+            font-size: clamp(2.5rem, calc(1.375rem + 5.625vw), 3rem) !important;
+        }
+    }
 }
