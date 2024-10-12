@@ -1,4 +1,4 @@
-.startDestroyer {
+.starDestroyer {
     display: block;
     position: relative;
     height: 100vh;
@@ -7,4 +7,70 @@
     z-index: 0;
     pointer-events: none;
     background-color: black;
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        color: yellowgreen;
+        pointer-events: none;
+
+        &__rules {
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 600;
+            padding-top: 20px;
+            height: 100px;
+            font-size: 1.5rem;
+            background: linear-gradient(180deg, rgba(61,61,61,1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        &__progress {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            background-color: grey;
+            height: 100px;
+            opacity: 0.8;
+
+            p {
+                position: absolute;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 600;
+                font-size: 2rem;
+                color: white;
+                text-align: center;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+            }
+
+            &-bar {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
+        }
+
+        &__picture1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 180px;
+            width: auto;
+        }
+
+        &__picture2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 160px;
+            width: auto;
+        }
+    }
+
+   
+
 }
