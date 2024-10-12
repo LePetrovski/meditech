@@ -70,6 +70,7 @@
             "id": 7,
             "name": "Star destroyer",
             "description": "********** ******** ** ****** *** ******* ** ** ********** through galaxy. Be aware that access this project initiate external connexion.",
+            "report": "EXTERNAL CONNEXION INITIATED.",
             "picture": "satelite.jpeg",
             "partner": "starlink.png",
             "partnerName": "StarLink",
@@ -80,9 +81,10 @@
             "id": 8,
             "name": "HumanDotNet Experience",
             "description": "New version of the old project Deus Ex Machina. We are now able to create the next generation of Transhumanity.",
-            "picture": "satelite.jpeg",
-            "partner": "starlink.png",
-            "partnerName": "StarLink",
+            "report": "<p>It works ! </br> First digitalized human is now online. We are now able to create the next.</br> But before that, we need to improve the process and retrieve Jameson. </br> He's lost somewhere on our server and we need his intels from the Agency. Little RAT ! </br> We are now able to create the next generation of Transhumanity.</br> Master will be pleased</p>",
+            "picture": "humandotnet.webp",
+            "partner": "logo.png",
+            "partnerName": "Meditech branch",
             "status": 1,
             "category": "Technology"
         }
