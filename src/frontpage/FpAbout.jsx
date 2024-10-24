@@ -3,7 +3,7 @@ import "../sass/frontpage/fpAbout.scss";
 
 export default function FpAbout() {
     return (
-        <section className="fpAbout">
+        <section className="fpAbout" id="fpAbout">
             <h2 className="fpAbout__title">THE PRIME TEAM</h2>
 
             <div className="fpAbout__content">
