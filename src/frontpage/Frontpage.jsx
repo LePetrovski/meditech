@@ -28,19 +28,19 @@ export default function Frontpage() {
             }
         });
 
-        ScrollTrigger.create({
-            trigger: '#picture2',
-            start: 'top bottom-=50',
-            end: 'top center-=400',
-            markers: false,
-            once: true,
-            onLeave: () => {
-                gsap.to('#picture2', {
-                    opacity: 1,
-                    duration: 0.3
-                });
-            },
-        });
+        // ScrollTrigger.create({
+        //     trigger: '#picture2',
+        //     start: 'top bottom-=50',
+        //     end: 'top center-=400',
+        //     markers: false,
+        //     once: true,
+        //     onLeave: () => {
+        //         gsap.to('#picture2', {
+        //             opacity: 1,
+        //             duration: 0.3
+        //         });
+        //     },
+        // });
         
     }, []);
     
@@ -51,7 +51,7 @@ export default function Frontpage() {
         <FpTyping />
         <FpDNA clipDNA={clipDNA} />
         <FpAbout />
-        <FpProducts />
+        {/* <FpProducts /> */}
         <FpLead />
     </div>
   
