@@ -35,12 +35,12 @@ export default function FpAbout() {
                                     // Same substring at the start will only be typed once, initially
                                     'Edmund Johnson, CEO & chief scientist',
                                     1000,
-                                    // 'Edmund Johnson, CEO & cHleP',
-                                    // 300,
-                                    // 'Edmund Johnson, CEO & cHLEP',
-                                    // 300,
-                                    // 'Edmund Johnson, CEO & cHELP',
-                                    // 1000
+                                    'Edmund Johnson, CEO & cHleP',
+                                    300,
+                                    'Edmund Johnson, CEO & cHLEP',
+                                    300,
+                                    'Edmund Johnson, CEO & cHELP',
+                                    1000
                                 ]}
                                 speed={50}
                                 repeat={Infinity}
