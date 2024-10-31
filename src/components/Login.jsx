@@ -9,7 +9,7 @@ function Login({ handleLogin }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (username === 'ed.johnson@Johnson-meditech.com' && password === '7gimli') {
+        if (username === 'ed.johnson@johnson-meditech.com' && password === '7gimli') {
             handleLogin();
             navigate('/projects');
         } else {
